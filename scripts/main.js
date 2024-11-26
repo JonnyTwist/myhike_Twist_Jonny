@@ -247,7 +247,7 @@ function saveBookmark(hikeDocID) {
 
 // }
 
-function updateBookmark() {
+function updateBookmark(hikeDocID) {
     currentUser.get().then(doc => {
         currentBookmarks = doc.data().bookmarks;
         if (currentBookmarks && currentBookmarks.includes(hikeDocID)) {
